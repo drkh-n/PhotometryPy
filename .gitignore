@@ -1,0 +1,14 @@
+.env
+__pycache__
+test*
+simtar_partial
+prf
+plots
+1e2259+586
+sensitivity_results.coldat
+src/benchmark.py
+src/__pycache__
+results/old
+results/one_shot.csv
+results/photometry/result_1e2259.coldat
+.DS_Store
