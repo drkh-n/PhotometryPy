@@ -1,0 +1,59 @@
+# PhotometryPy default configuration
+# Purpose: Defines input paths, photometry parameters, and output locations.
+# Note: Keys are flat (no nesting) for simplicity and compatibility.
+
+# -----------------------------------------------------------------------------
+# Input / Output paths
+# -----------------------------------------------------------------------------
+# Path to the list of targets (name, ra, dec)
+magnetars_list_path_file: ./mag_info/mag_folders_dec.coldat
+
+# Directory containing per-target data folders
+data_path_folder: ./simtar_partial
+
+# Directory with PRF/PSF FITS files
+prf_path: ./prf
+
+# Intermediate per-measurement results file (all aperture photometry)
+intermediate_path_file: ./results/photometry/all_phot.coldat
+
+# Final aggregated results file (sigma=5 fluxes, etc.)
+result_path_file: ./results/all_sigma_ensemble.coldat
+
+
+# -----------------------------------------------------------------------------
+# Photometry parameters
+# -----------------------------------------------------------------------------
+# Channels to process (IRAC bands)
+channels: [1, 2, 3, 4]
+
+# Grid size for simulated PRF placements (NxN)
+grid: 3
+
+# Pixel spacing between PRF placement points
+spacing: 2.828
+
+
+# -----------------------------------------------------------------------------
+# Aperture photometry radii (camera pixels)
+# -----------------------------------------------------------------------------
+# Aperture radius
+rap_(cam_pix): 2.00
+
+# Inner sky annulus radius
+rbackin_(cam_pix): 2.2
+
+# Outer sky annulus radius
+rbackout_(cam_pix): 3.0
+magnetars_list_path_file: ./mag_info/mag_folders_dec.coldat
+intermediate_path_file: results/photometry/all_phot.coldat
+data_path_folder: ./simtar_partial
+rap_(cam_pix): 2.00
+rbackin_(cam_pix): 2.2
+rbackout_(cam_pix): 3.0
+spacing: 2.828
+prf_path: ./prf
+result_path_file: ./results/all_sigma_ensemble.coldat
+channels: [1, 2, 3, 4]
+grid: 3
+

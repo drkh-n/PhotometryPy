@@ -112,7 +112,7 @@ def process_all_magnetars(infile, outfile, plot=True):
 
             # use positional indexing (.iloc) because the filtered DataFrame
             # preserves original row labels which may not include 0,1,2...
-            sigma_5 = 5.0 * float(one_shot_line['sigma'].iloc[0]) * const
+            sigma_5 = 5.0 * float(one_shot_line['sigma'].iloc[0])
             # print(sigma_5)
 
             slope, intercept, r_value, p_value, std_err = stats.linregress(x_data, y_data)
